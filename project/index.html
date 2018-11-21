@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link href="css/estilos.css" rel="stylesheet">
+	<title>Jotape Lounge Bar</title>
+	
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/gallery.theme.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+</head>
+<body>
+
+	<nav class="Menu">
+	<!-- inicio da divisão do menu navbar -->
+				<a href="#" class="Mobile">&#9776; Menu</a>
+				<div class="navbar">
+
+		<!--<header>
+			<a href="index.html"><img src="imagens/.png" title="Projeto Matheus" alt="Logotipo do site"></a>
+		</header> -->
+		
+		<a href="index.html">Inicio</a>
+		<a href="casa.html">A casa</a>
+		<a href="eventos.html">Eventos</a>
+		<a href="contato.html">Contato</a>
+		<a href="sobre.html">Sobre</a>
+		
+
+	</div><!-- fim da divisão do menu navbar -->
+
+	</nav>
+
+
+
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+
+  <a href="sobre.html" ><img src="imagens/funk.jpg" alt="imagens do carousel 1"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="imagens/laser3.jpg"  alt="imagens do carousel 2">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="imagens/laser4.jpg"alt="imagens do carousel 3">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+
+	<!--<div class="Layout" style="background-image: url(imagens/fest.jpg);">
+		<p style="font-family: bold;">HOOKA LOUNGE</p>
+	</div>-->
+	<div class="DivTexto">
+		<h2 class="alert">Nossos Eventos</h2>
+		<ul>
+		<li>
+			<a href="casa.html">
+				<img src="imagens/laser.jpg" alt="imagens do carousel 1">
+				<img src="imagens/laser4.jpg" alt="imagens do carousel 2">
+			</a>
+		</li>
+	</ul>
+
+		<ul>
+		<li>
+			<a href="casa.html">
+				<img src="imagens/funk.jpg" alt="imagens do carousel 1">
+				<img src="imagens/laser3.jpg" alt="imagens do carousel 1">
+			</a>
+		</li>
+	</ul>
+	
+			
+
+			
+	</div>
+	
+	<h3 style="text-align: center;">A Nova JOTAPE LOUNGE BAR VEM COM GRANDES NOVIDADES PARA O SEU PUBLICO</h3>
+
+	<div class="Layout" style="background-image: url(imagens/smoke.jpg);">
+		
+	</div>
+	
+
+
+		<footer>
+			<p>©2018 - Aluno JotaPe</p>
+			<h3 class="parceria">PARCERIAS</h3>
+			<img src="imagens/parceiros.jpg" alt="imagens do carousel 1">			
+		</footer>
+	
+
+
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>	
+<script type="js/caroca.js"></script>
+<script src="js/tela.js"></script>
+</body>
+</html>
